@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <title>Arabian Point</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file:///C:/Users/Hakim/bootstrap-5.0.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="file:///C:/Users/Hakim/bootstrap-5.0.1-dist/css/bootstrap-reboot.rtl.min.css">
+     <link rel="stylesheet" href="file:///C:/Users/Hakim/bootstrap-5.0.1-dist/css/bootstrap-grid.css">
+    <style>
+        body{
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122F;
+    font-family: 'Oxygen', sans-serif;
+}
+     #header-nav{
+          
+            background-color: #f6b319;
+            border-radius: 0;
+            border: 0;      
+     }
+
+     #logo-img{
+        background: url("logo.png") no-repeat;
+        width: 150px;
+        height: 150px;
+
+        margin: 10px 15px 10px 0;
+     }
+     
+     .navbar-brand{
+        padding-top:15px ;
+     }
+     .navbar-brand{
+        font-family: 'Lora',serif;
+        color: #557c3e;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #222;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: .75;
+     }
+     .navbar-brand a.hover, .navbar-brand a.focus{
+        text-decoration: none;
+     }
+      .navbar-brand p{
+        color: #000;
+        text-transform: uppercase;
+        font-size: .7em;
+        margin-top: 15px;
+      }
+      .navbar-brand p span{
+        vertical-align:middle ;
+      }
+      .navbar-toggle{
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+      }
+      .navbar-toggle:focus{
+        outline: 0;
+      }
+
+      .navbar-toggle .icon-bar{
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+      }
+
+      .navbar-toggle .icon-bar + .icon-bar{
+        margin-top: 4px;
+      }
+     
+      @media (min-width: 768px){
+        .navbar-toggle{
+            display: none;
+        }
+      }
+       
+       #nav-list{
+        margin-top: 10px;
+       }
+       #nav-list a{
+        color: #951C49;
+        text-align: center;
+       }
+       #nav-list a:hover{
+        background-color: #E7E7E7;
+       }
+       #nav-list a span{
+        font-size: 1.8em;
+       }
+       #phone{
+        margin-top: 5px;
+       }
+       #phone a{
+        text-align: right;
+        padding-bottom: 0;
+       }
+       #phone div{
+        color: #557c3e;
+        text-align: right;
+        padding-right: 15px;
+       }
+       
+       .navbar-header button.navbar-toggle,.navbar-header .icon-bar{
+        border: 1px solid #61122F;
+       }
+       .navbar-header button.navbar-toggle{
+        clear: both;
+        margin-top: -30px;
+       }
+
+
+       .panel-footer{
+          margin-top: 30px;
+          padding-top: 35px;
+          padding-bottom: 30px;
+          background-color: #222;
+          border-top: 0;
+       }
+
+       .panel-footer div.row{
+          margin-bottom: 35px;
+       }
+
+       #hours,#address{
+          line-height: 2;
+       }
+
+       #hours> span,#address > span{
+          font-size: 1.3em;
+       }
+
+       #address p{
+          color: #557c3e;
+          font-size: .8em;
+          line-height: 1.8;
+       }
+
+     #testimonials{
+          font-style: italic;
+
+     }
+     #testimonials p:nth-child(2){
+          margin-top: 25px;
+     }
+
+       @media (min-width: 992px)and (max-width: 1199px){
+        #logo-img{
+            background: url("../logo.png") no-repeat;
+            width: 100px;
+            height: 100px;
+            margin: 5px 5px 5px 0;
+        }
+       }
+
+       @media(min-width: 768px)and (max-width: 991px){
+        .container.jumbotron {
+        background:url('jumbo.jpg') no-repeat;
+        height:432px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+    
+
+       }
+       @media(max-width: 767px){
+        .navbar-brand{
+            padding-top: 10px;
+            height: 80px;
+
+        }
+        .navbar-brand h1{
+            padding-top: 10px;
+            font-size: 5vw;
+        }
+        .navbar-brand p{
+            font-size: .6em;
+            margin-top: 12px;
+        }
+        .navbar-brand p img{
+            height: 20px;
+        }
+        #collapsable-nav a{
+            font-size: 1.2em;
+
+        }
+        #collapsable-nav a span{
+            font-size: 1em;
+            margin-right: 5px;
+        }
+        #call-btn > a{
+            font-size: 1.5em;
+            display: block;
+            margin: 0 20px;
+            padding:10px ;
+            border: 2x solid #fff;
+            background-color: #f6b319;
+            color: #951c49;
+        }
+        #xs-deliver{
+            margin-top: 5px;
+            font-size: .7em;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+
+          .panel-footer section{
+               margin-bottom: 30px;
+               text-align: center;
+          }
+          .panel-footer section:nth-child(3){
+               margin-bottom: 0;
+          }
+          .panel-footer section hr{
+               width: 50%;
+          }
+
+          .container.jumbotron {
+        margin-top: 5px;
+        padding: 0;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+
+       }
+       #menu-tile, #specials-tile{
+       width: 360px;
+       margin: 0 auto 15px;
+       }
+       .menu-item-photo{
+        margin-right: auto;
+       }
+       .menu-item-tile .menu-item-price{
+        text-align: center;
+       }
+       .menu-item-description{
+        text-align: center;
+       }
+
+
+}
+       @media(min-width: 1200px){
+        .container.jumbotron {
+        background:url('jumbo.jpg') no-repeat;
+        height:675px;
+        box-shadow: 0 0 50px #3F0C1F;
+        border: 2px solid #3F0C1F;
+
+       }
+  }
+
+       @media(max-width: 479px){
+
+          .navbar-brand h1{
+               padding-top:5px ;
+               font-size: 6vw;
+          }
+
+
+          #menu-tile,#specials-tile{
+               width: 280px;
+               margin: 0 auto 15px;
+          }
+          .col-xxs-12{
+          position: relative;
+          min-height: 1px;
+          padding-right: 15px;
+          padding-left: 15px;
+          float: left;
+          width: 100%;
+       }
+       }
+
+       #menu-tile,#specials-tile,#map-tile{
+          height: 250p;
+          width: 100%;
+          margin-bottom: 15px;
+          position: relative;
+          border: 2px solid #3F0C1F;
+          overflow: hidden;
+         }
+       #menu-tile:hover,#specials-tile:hover,#map-tile:hover{
+          box-shadow: 0 1px 5px 1px #cccccc;
+       }
+       #menu-tile{
+        background: url(../menu.jpg) no-repeat;*
+
+          background-position: center;
+       }
+       #specials-tile{
+          background: url(special.jpg) no-repeat;
+          background-position: center;
+       }
+       #menu-tile span,#specials-tile span,#map-tile span{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          text-align: center;
+          font-size: 1.6em;
+          text-transform: uppercase;
+          background-color: #000;
+          color: #fff;
+          opacity: .8;
+       }
+
+       .category-title{
+          position: relative;
+          border: 2px solid #3F0C1F;
+          overflow: hidden;
+          width: 200px;
+          height: 200px;
+          margin: 0 auto 15px;
+       }
+       .category-title span{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          text-align: center;
+          font-size: 1.2em;
+          text-transform: uppercase;
+          background-color: #000;
+          color: #fff;
+          opacity: .8;
+       }
+
+       .category-title:hover{
+          box-shadow: 0 1px 5px 1px #cccccc;
+       }
+       #menu-categories-tile + div{
+        margin-bottom: 50px;
+       }
+       .menu-item-title{
+        margin-bottom: 25px;
+       }
+       .menu-item-title hr{
+        width: 80%;
+       }
+       .menu-item-tile .menu-item-price{
+        font-size: 1.1em;
+        text-align: right;
+        margin-top: -15px;
+        margin-right: -15px;
+       }
+       .menu-item-title .menu-item-price span{
+        font-size: .6em;
+       }
+       .menu-item-photo{
+        position: relative;
+        border: 2x solid #3F0C1F;
+        overflow: hidden;
+        padding: 0;
+        margin-right: -15px;
+        margin-left: auto;
+        margin-bottom: 20px;
+        max-width: 250px;
+       }
+       .menu-item-photo div{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80px;
+        background-color: #557c3e;
+        text-align: center;
+       }
+       .menu-item-description{
+        padding-right: 30px;
+       }
+       h3.menu-item-title{
+        margin: 0 0 10px;
+
+       }
+       .menu-item-details{
+        font-size: .9em;
+        font-style: italic;
+       }
+
+    </style>
+    
+    
+    
+
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+            <div class="navbar-header"></div>
+            <a href="index.html" class="pull-left" visible-md visible-lg>
+               <div id="logo-img" alt="Logo Image"></div></a>
+               
+            <!--img src="logo.png" alt="Logo image" style="float: right; height: 150px; width: 150px"-->
+            
+
+
+            <a href="index.html" class=""></a>
+
+               <div class="navbar-brand">
+               <a href="index.html"><h1>Arabian Point</h1></a>
+                <p>
+                <img src="">
+                <span>Kishore Certified</span>
+                </p>
+               </div>
+
+
+
+               <div>
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#collapsable-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+               </button>
+               </div>
+
+                  
+                  <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="">
+                                <span class="glyphicon glyphicon-info-sign"></span><br
+                                class=" hidden-xs">Menu</a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-info-sign"></span><br
+                                class=" hidden-xs">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-certificate"></span><br
+                                class=" hidden-xs">Awards</a>
+                        </li>
+                        <li id="phone" class="hidden-xs">
+                            <a href="tel:000-000-0000">
+                            <span>000-000-0000</span></a><div>*WE Deliver</div>
+                            
+                        </li>
+                    </ul>
+                    
+                  </div>
+             </div>
+        </nav>
+
+    </header>
+
+      <div id="call-btn" class="visible-xs">
+      <a id="btn" href="tel:000-000-0000">
+        <span class="glyphicon glyphicon-earphone"></span>
+        000-000-0000
+      </a>
+       </div>
+       <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+      
+
+       <div id="main-content" class="container">
+        <h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
+        <div class="text-center">Lunch is not served until after 1 pm</div>
+        <section class="row">
+            <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D01</div>
+                            <img class="image-responsive" width="250" height="150" src="b.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Chicken Lolipoop</h3>
+                    </div>
+                    <div class="menu-item-details">Its a crispy,juicy,tempting flavour and amazing taste</div>
+                </div>
+                
+            </div>
+            <hr class="visible-xs">
+
+            <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D02</div>
+                            <img class="image-responsive" width="250" height="150" src="b.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Chicken Biryani</h3>
+                    </div>
+                    <div class="menu-item-details">Its a crispy,juicy,tempting flavour and amazing taste</div>
+                </div>
+                
+            </div>
+            <hr class="visible-xs">
+
+            <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D03</div>
+                            <img class="image-responsive" width="250" height="150" src="b.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Chicken Fried Rice</h3>
+                    </div>
+                    <div class="menu-item-details">Its a crispy,juicy,tempting flavour and amazing taste</div>
+                </div>
+                
+            </div>
+            <hr class="visible-xs">
+
+            <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D04</div>
+                            <img class="image-responsive" width="250" height="150" src="b.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Jumbo Shawrma</h3>
+                    </div>
+                    <div class="menu-item-details">Its a crispy,juicy,tempting flavour and amazing taste</div>
+                </div>
+                
+            </div>
+            <hr class="visible-xs">
+
+            <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D05</div>
+                            <img class="image-responsive" width="250" height="150" src="b.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Falafeel Combo</h3>
+                    </div>
+                    <div class="menu-item-details">Its a crispy,juicy,tempting flavour and amazing taste</div>
+                </div>
+                
+            </div>
+            <hr class="visible-xs">
+
+            <div class="menu-item-tile col-md-6">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="menu-item-photo">
+                            <div>D06</div>
+                            <img class="image-responsive" width="250" height="150" src="b.jpg" alt="Item">
+                        </div>
+                        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95<span>(quart)</span></div>
+                    </div>
+                    <div class="menu-item-description col-sm-7">
+                        <h3 class="menu-item-title">Tandoori Chicken</h3>
+                    </div>
+                    <div class="menu-item-details">Its a crispy,juicy,tempting flavour and amazing taste</div>
+                </div>
+                
+            </div>
+            <hr class="visible-xs">
+        
+        
+        
+        
+        </section>
+
+
+       </div>
+       <footer class="panel-footer">
+            <div class="container">
+                 <div class="row">
+                      
+                      <section id="hours" class="col-sm-4">
+                           <span>Hours:</span><br>
+                           Sun-Fri: 11:00am to 11:00pm<br>
+                           Saturday closed
+                           <hr class="visible-xs">
+                      </section>
+
+                      <section id="address" class="col-sm-4">
+                           <span>Address:</span><br>
+                           NIBM,Kauserbagh,Near Kauserbagh Masjid<br>
+                           <p>Delivery area outside 3 km will cost you 50 rs</p>
+                           <hr class="visible-xs">
+                      </section>
+
+                      <section id="testimonials" class="col-sm-4">
+                           <p>The best non-veg restaurant you have been ever visited best known for shawrama and Tandoori Chicken </p>
+                           <hr class="visible-xs">
+                      </section>
+                 </div>
+               <div class="text-center">&copy; Copywrite Arabian Point 2020</div>
+            </div>
+
+       </footer>
+
+
+    <script src="file:///C:/Users/Hakim/bootstrap-5.0.1-dist/js/jquary.js"></script>
+    <script src="file:///C:/Users/Hakim/bootstrap-5.0.1-dists/js/bootstrap.min.js"></script>
+
+</body>
+</html>
